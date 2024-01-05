@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vw;
+    text-align: center;
+    background-image: url(Bilde.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+    width: 100%;
+    transform-origin: center;
+    background-color: black;
+}
+ 
+.wrapper {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 1em;
+    padding-top: 1em;
+}
+ 
+#inputs {
+    gap: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 4%;
+    width: 70%;
+}
+label[for="pace"] {
+    margin-left: 9%;
+}
+ 
+input,
+select,
+button {
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+ 
+button {
+    cursor: pointer;
+    background-color: #b03a16;
+    color: white;
+    border: none;
+    margin: 1%;
+}
+ 
+button:hover {
+    background-color: #a42b1d;
+}
+#header{
+    font-size: 3em;
+    color: aliceblue;
+    width: 100%;
+    text-align: center;
+}
+.wrapper{
+    width: 100vw;
+    min-height: 100vh;
+    margin: auto;
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 3fr 0.1fr;
+    gap: 1px;
+    grid-template-areas:
+    "hed hed hed "
+    "in in li"
+    "sel sel li"
+    ;
+    color: aliceblue;
+    max-height: 100vh;
+}
+#inputs{grid-area: in;}
+#sorting{grid-area: sel;}
+#container{grid-area: li;}
+#header{grid-area: hed ;}
+ 
+#sorting{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6em;
+}
+ 
+.fifaCard{
+    height: 330px;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+.statContainer{
+    position: absolute;
+    top: 219px;
+    left: 35px;
+    height: 70px;
+    width: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "p p"
+    "p p"
+    "p p";
+}
+#container{
+    width: 300px;
+    color: rgb(225, 210, 121);
+    
+}
+.nameCont{
+    position: absolute;
+    width: 100%;
+    top: 190px;
+    text-align: center;
+}
+.dateCont{
+    position: absolute;
+    top: 150px;
+    left: 50px;
+}
+.katCont{
+    position: absolute;
+    top: 110px;
+    left: 77px;
+}
+
+.overallCont{
+    position: absolute;
+    top: 55px;
+    left: 55px;
+    font-weight: bold;
+    font-size: 1.8em;
+    
+    margin-left: 18px;
+}
+
