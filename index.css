@@ -1,0 +1,456 @@
+*{
+    transition: 0.5s;
+}
+body{
+    
+   margin: 0%;
+    background-color: rgb(39, 38, 38);
+    height: 200vw;
+    overflow-x: hidden;
+    position: relative;
+    
+}
+
+
+
+
+.background{
+    width: calc(100% - 100px); /* Subtract margin on both sides */
+    margin: 0 auto; /* Center the element horizontally */
+    margin-top: 0%;
+    
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(2, 10, 2, 0.3) 100%), url(IMG_2135.JPG);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+    transform-origin: center;
+    height: 60vw;
+    box-shadow: inset 0 0 200px rgba(1, 1, 1, 1); 
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(39, 38, 38);
+    z-index: 1;
+    color: aliceblue;
+    height: 3.6vw;
+    display: flex;
+    align-items: center;
+    
+}
+
+nav > ul{
+    position: absolute;
+    left: -400px;
+    top: -47px;
+}
+
+
+ul {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        gap: 2em;
+        padding: 0.5em;
+        padding-bottom: 30px;
+        flex-direction: row;
+        padding-top: 4vw;
+       
+        width: calc(100% - 20%); /* Set the width dynamically (100% - 20%) */
+        margin-left: auto; /* Center the border by pushing it to the right */
+        margin-right: auto; /* Center the border by pushing it to the left */
+        position: relative;
+}
+    
+header > ul{
+    border-bottom: solid white 1px;
+}
+
+
+a {
+    text-decoration: none; /* Remove default underline */
+    color: white; /* Set text color to white */
+    position: relative;
+}
+
+a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -3px; /* Adjust to control the distance below the text */
+    left: 0;
+    width: 0;
+    height: 2px; /* Adjust to control the thickness of the underline */
+    background-color: white; /* Set the color of the underline */
+    transition: width 0.3s ease; /* Add a smooth transition effect */
+}
+
+a:hover::after {
+    width: 100%; /* Expand the underline to 100% on hover */
+}
+
+
+#MM{
+    height: 2.4vw;
+    position: absolute;
+    left: 40px;
+    transition: transform 3s; 
+   
+}
+#MM:hover { 
+    transform: rotate(360deg);
+}
+
+
+#snap{
+    height: 2.2vw;
+    
+}
+#snap:hover {
+    transform: scale(1.1); /* Increase size on hover */
+}
+
+#snap:nth-child(1):hover {
+    content: url("snapyellow.png"); /* Change the image for the first logo on hover */
+}
+
+#insta{
+    height: 2.2vw;
+    
+}
+#insta:hover {
+    transform: scale(1.1); /* Increase size on hover */
+}
+
+#insta:nth-child(2):hover {
+    content: url("instalogo.avif"); /* Change the image for the first logo on hover */
+}
+#tiktok{
+    height: 2.2vw;
+    
+}
+#tiktok:hover {
+    transform: scale(1.1); /* Increase size on hover */
+}
+
+#tiktok:nth-child(3):hover {
+    content: url("tiktoklogo.png"); /* Change the image for the first logo on hover */
+}
+#footer{
+    color: antiquewhite;
+    background-color: black;
+    height: 30vh;
+    width: 100%;
+  
+    position: absolute;
+    bottom: 0;
+}
+
+#intro{
+    color: white;
+    font-size: 3em;
+    position: absolute;
+    left: 2.5em;
+    top: 10em;
+    transition: color 0.3s ease;
+    
+}
+
+#intro:hover{
+    color: aqua;
+}
+
+#projects{
+    height: 60vw;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #1108ba;
+    overflow: hidden;
+    width: 50%;
+    height: 0;
+    transition: .5s ease;
+    margin: 0 auto;
+  }
+  .overlay2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #6e11bf;
+    overflow: hidden;
+    width: 50%;
+    height: 0;
+    transition: .5s ease;
+    margin: 0 auto;
+
+  }
+  .overlay3{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #c20d0d;
+    overflow: hidden;
+    width: 50%;
+    height: 0;
+    transition: .5s ease;
+    margin: 0 auto;
+
+  }
+  
+  .container:hover .overlay {
+    height: 100%;
+    opacity: 0.9;
+  }
+
+  .container:hover .overlay2 {
+    height: 100%;
+    opacity: 0.9;
+  }
+  .container:hover .overlay3 {
+    height: 100%;
+    opacity: 0.9;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+ 
+  
+  
+  @keyframes rainbowSlide {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+.rainbow-slide-text {
+    font-weight: bold;
+    display: inline-block;
+    background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    background-size: 800% 100%; /* Adjust the size based on the number of colors in the gradient */
+    color: transparent;
+    -webkit-background-clip: text; /* For WebKit/Blink browsers */
+    background-clip: text;
+    animation: rainbowSlide 4s linear infinite; /* Adjust the duration and timing function as needed */
+    background-color: white;
+    position: absolute;
+    top: 21.5em;
+    left: 12em;
+    font-size: 3em;
+}
+
+#border{
+    border: solid blue;
+}
+#border2{
+    border: solid purple;
+
+}
+#border3{
+    border: solid red;
+
+}
+
+#Hobbies {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #415a77;
+    height: 120vh;
+    gap: 10em;
+    text-align: center;
+    position: relative;
+}
+
+#football {
+    background-color: #1B263B;
+    height: 75vh;
+    width: 40vw;
+    transform: rotate(4deg);
+   
+    text-align: center;
+   
+}
+
+#training {
+    background-color: #1B263B;
+    height: 75vh;
+    width: 40vw;
+    transform: rotate(6deg);
+    text-align: center;
+}
+
+#h1{
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    margin-top: 1.5em;
+    text-align: center;
+}
+
+#hobbyimg{
+    background-position: center;
+    height: 30vh;
+    text-align: center;
+    padding-top: 2em;
+    width: 13vw;
+    
+}
+
+#h{
+    height: 20vh;
+    color: white;
+    position: absolute;
+    top: 1em;
+    font-size: 2em;
+   
+    
+}
+
+@media only screen and (max-width: 600px) {
+    /* Adjust styles for screens with a maximum width of 600px (typical for phones) */
+  
+    body {
+      height: auto; /* Remove fixed height */
+    }
+  
+    .background {
+      height: auto; /* Remove fixed height */
+    }
+  
+    nav > ul {
+      left: 0; /* Move the navigation items to the left */
+      top: 0;
+      text-align: center; /* Center the navigation items */
+    }
+  
+    header > ul {
+      flex-direction: column; /* Stack menu items vertically */
+      padding-top: 2vw; /* Adjust top padding */
+    }
+  
+    #MM {
+      left: auto; /* Remove absolute positioning */
+      margin: 0 auto; /* Center the MM image */
+      transform: none; /* Remove rotation */
+    }
+  
+    #intro {
+      top: 5em; /* Adjust top position */
+    }
+  
+    #projects,
+    #Hobbies {
+      height: auto; /* Remove fixed height */
+    }
+  
+    .container,
+    .image {
+      width: 100%; /* Make the images take up the full width */
+    }
+  
+    .overlay,
+    .overlay2,
+    .overlay3 {
+      width: 100%; /* Make overlays take up full width */
+    }
+  
+    .rainbow-slide-text {
+      top: 16em; /* Adjust top position */
+      left: 2em; /* Adjust left position */
+    }
+  
+    #Hobbies {
+      gap: 2em; /* Adjust gap between hobbies */
+    }
+  
+    #football,
+    #training {
+      width: 100%; /* Make hobby sections take up full width */
+      transform: none; /* Remove rotation */
+    }
+  
+    #hobbyimg {
+      width: 70%; /* Make hobby images take up 70% of the width */
+    }
+  
+    #footer {
+      height: auto; /* Remove fixed height */
+    }
+  
+    #footer {
+      height: auto; /* Remove fixed height */
+    }
+  }
+
+  @media(orientation:portrait){
+    body{
+        width: 100vw;
+        min-height: 100vh;
+        margin: auto;
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6fr 1fr);
+        gap: 10px;
+        grid-template-areas:
+        "nav"
+        "bac"
+        "rain"
+        "pro"
+        "ho"
+        "foot";
+        overflow: hidden;
+    }
+    
+
+}
+
+
+#nav{grid-area: nav;}
+.background{grid-area: bac;}
+.rainbow-slide-text{grid-area: rain;}
+#projects{grid-area: pro ;}
+#Hobbies{grid-area: ho;}
+#footer{grid-area: foot;}
