@@ -370,8 +370,8 @@ a:hover::after {
 
     .background {
         width: 100%;
-        margin: 0;
-        height: 100vh; /* Adjust the height as needed for better visibility */
+      
+        height: 70vh; /* Adjust the height as needed for better visibility */
     }
 
     nav {
@@ -394,9 +394,7 @@ a:hover::after {
         padding-top: 2vw;
     }
 
-    a::after {
-        bottom: -6px; /* Adjust to control the distance below the text */
-    }
+  
 
     #MM,
     #snap,
@@ -406,17 +404,15 @@ a:hover::after {
     }
 
     #footer {
-        height: auto;
+        height: 15vh;
     }
 
     #intro {
-        top: 2em; /* Adjust the top position */
+        top: 4em; /* Adjust the top position */
+        left: 1em;
     }
 
-    #projects,
-    #Hobbies {
-        height: auto;
-    }
+    
 
     .container,
     .image {
@@ -430,13 +426,14 @@ a:hover::after {
     }
 
     .rainbow-slide-text {
-        top: 16em; /* Adjust the top position */
-        left: 2em; /* Adjust the left position */
+        top: 28em; /* Adjust the top position */
+        left: 3.5em; /* Adjust the left position */
         font-size: 2em; /* Adjust the font size */
     }
 
     #Hobbies {
         gap: 2em; /* Adjust the gap between hobbies */
+        height: 75vh;
     }
 
     #football,
@@ -449,9 +446,11 @@ a:hover::after {
         width: 70%;
     }
 
-    #footer {
-        height: auto;
+    #h{
+        top: 0.3em;
     }
+
+   
 }
 
 
