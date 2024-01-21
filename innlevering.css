@@ -1,0 +1,422 @@
+*{
+    transition: 0.5s;
+}
+nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: rgba(0,0,0,1);
+    z-index: 1;
+    
+    
+}
+
+
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 2em; 
+    margin: 0;
+    padding: 0.5em;
+    
+}
+nav ul a{
+    border: 1px solid red;
+    padding: 0.5em;
+
+}
+
+body{
+    margin: 0;
+    background-color: red;
+    height: 185vh;
+    position: relative;
+    background-image: url(kunstgress.jpg);
+    overflow:auto
+}
+
+@media(orientation:landscape){
+    .wrapper{
+        width: 80vw;
+        min-height: 100vh;
+        margin: auto;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 2fr 3fr 3fr;
+        gap: 10px;
+        grid-template-areas:
+        "fot tit tit kg"
+        "mai mai mai kg"
+        "list list tab kg";
+        overflow: hidden;
+    }
+}
+
+
+@media(orientation:portrait){
+    .wrapper{
+        width: 100vw;
+        min-height: 100vh;
+        margin: auto;
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6fr 1fr);
+        gap: 10px;
+        grid-template-areas:
+        "fot"
+        "tit"
+        "kg"
+        "mai"
+        "tab"
+        "list";
+        overflow: hidden;
+    }
+    #tab{display: none;}
+
+}
+
+
+#fotball{grid-area: fot;}
+#tittel{grid-area: tit;}
+#kg{grid-area: kg;}
+#main{grid-area: mai ;}
+#table{grid-area: tab;}
+#list{grid-area: list;}
+
+#kg{
+    background-image: url(oldtrafford.webp);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+    height: 62%;
+    width: 100%;
+    transform-origin: center; 
+    box-shadow: 5px 5px 5px 5px;
+}
+
+#football {
+    background-image: url(Manchester_United_FC_crest.svg.png);
+    
+    background-position: center;
+    background-size: cover;
+    transition: transform 3s; 
+    width: 100%;
+    height: 80%;
+}
+
+#football:hover { 
+    transform: rotate(360deg);
+}
+#tittel{
+    text-align: center;
+    font-size: 5em;
+    font-family: cursive;
+    
+    color: red; 
+    transition: color 0.3s ease;
+    width: 100%;
+    font-weight: bold;
+    background-color: black;
+}
+#tittel:hover {
+    color: rgb(48, 117, 186);  
+}
+
+.hover-container,
+.hover-container2,
+.hover-container3,
+.hover-container4,
+.hover-container5,
+.hover-container6,
+.hover-container7,
+.hover-container8,
+.hover-container9,
+.hover-container10,
+.hover-container11 {
+    position: relative;
+    display: inline-block;
+}
+
+.infobox,
+.infobox2,
+.infobox3,
+.infobox4,
+.infobox5,
+.infobox6,
+.infobox7,
+.infobox8,
+.infobox9,
+.infobox10,
+.infobox11 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Style for the hover effect */
+.hover-trigger:hover + .infobox, .hover-trigger2:hover + .infobox2, .hover-trigger3:hover + .infobox3, .hover-trigger4:hover + .infobox4, .hover-trigger5:hover + .infobox5, .hover-trigger6:hover + .infobox6, .hover-trigger7:hover + .infobox7, .hover-trigger8:hover + .infobox8, .hover-trigger9:hover + .infobox9,.hover-trigger10:hover + .infobox10, .hover-trigger11:hover + .infobox11 {
+    display: block;
+}
+   
+   
+
+.infobox-content img,
+.infobox-content2 img,
+.infobox-content3 img,
+.infobox-content4 img,
+.infobox-content5 img,
+.infobox-content6 img,
+.infobox-content7 img,
+.infobox-content8 img,
+.infobox-content9 img,
+.infobox-content10 img,
+.infobox-content11 img {   
+    width: 6vw; 
+    height: 200%; 
+}
+
+.hover-trigger4:hover + .infobox4 {
+    display: block;
+}
+
+
+.hover-trigger4:hover + .infobox4 {
+    display: block;
+}
+
+
+.hover-trigger4:hover + .infobox4 {
+    display: block;
+}
+
+
+
+.hover-trigger4:hover + .infobox4 {
+    display: block;
+}
+
+
+.hover-trigger4:hover + .infobox4 {
+    display: block;
+}
+
+
+.hover-trigger4:hover + .infobox4 {
+    display: block;
+}
+
+
+.hover-trigger4:hover + .infobox4 {
+    display: block;
+}
+
+
+
+
+#main {
+    place-items: center;
+    box-shadow: 2px 2px 2px 2px;
+    
+}
+
+
+
+
+
+table{
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 20%;
+    background-color: #EEEEEE;
+    border-radius: 4px;
+    border: 2px solid black;
+    width: 100%;
+    
+}
+td{
+    padding: 0.7em;
+    width: 10em;
+    max-width: 10em;
+    margin: 2em;
+}
+
+thead>tr>th{
+    font-size: 1.5em;
+}
+
+.quote{
+   font-family: cursive;
+    font-size: 0.5em;
+}
+#england{
+    background-image:url(England.webp) ;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+#danmark{
+    background-image:url(Danmark.gif) ;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+#brazil{
+    background-image:url(Brazil.png) ;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+#portugal{
+    background-image:url(Portugal.png) ;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+#brazil2{
+    background-image:url(Brazil.png) ;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+#danmark2{
+    background-image:url(Danmark.gif) ;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+#england2{
+    background-image:url(England.webp) ;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+#frankrike{
+    background-image:url(Frankrike.png) ;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+#argentina{
+    background-image:url(Argentina.png) ;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+#england3{
+    background-image:url(England.webp) ;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+#cameroon{
+    background-image:url(Cameroon.png) ;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+#england{
+    background-image:url(England.webp) ;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.linksFooter{
+
+    display: flex;
+    position: absolute; /* or "sticky" depending on your preference */
+    bottom: 0;
+    
+
+    justify-content: space-around;
+    
+
+    width: 100%;
+
+    background-color: black;
+    color: #EEEEEE;
+
+}
+
+ol>li{
+    padding: 1.7em;
+}
+ol>li:hover{
+    font-weight: bold;
+}
+#mer{
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+tr td:first-child {
+    font-weight: bold;
+
+}
+
+
+
+#list {
+    background-color: #BAF2D8;
+    height: 85%;
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+    max-width: 40vw;
+}
+
+.left {
+    display: flex;
+    flex: 1;
+    gap: 2em;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+    
+}
+
+.right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.right > div {
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 100px; 
+    height: 100px; 
+    margin-bottom: 20px;
+}
+
+#hjem {
+    background-image: url(homekit.jpeg);
+}
+
+#bort {
+    background-image: url(Awaykit.avif);
+}
+
+#tred {
+    background-image: url(tredjedrakta.avif);
+}
