@@ -30,6 +30,7 @@ body{
 
 nav{
     position: sticky;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -39,7 +40,15 @@ nav{
     height: 3.6vw;
     display: flex;
     align-items: center;
+   
+
     
+}
+
+#title{
+    position: absolute;
+    top: 1em;
+    left: em;
 }
 
 nav > ul{
@@ -348,109 +357,99 @@ a:hover::after {
     
 }
 
-@media only screen and (max-width: 600px) {
-    /* Adjust styles for screens with a maximum width of 600px (typical for phones) */
-  
+
+
+  /* Your existing CSS rules outside the media query */
+
+@media only screen and (max-width: 600px) and (orientation: portrait) {
     body {
-      height: auto; /* Remove fixed height */
+        height: auto;
+        overflow-x: hidden;
     }
-  
+
     .background {
-      height: auto; /* Remove fixed height */
+        width: 100%;
+        margin: 0;
+        height: 40vh; /* Adjust the height as needed for better visibility */
     }
-  
+
+    nav {
+        height: 8vw; /* Adjust the height for better visibility */
+    }
+
     nav > ul {
-      left: 0; /* Move the navigation items to the left */
-      top: 0;
-      text-align: center; /* Center the navigation items */
+        left: 0;
+        top: 0;
+        text-align: center;
     }
-  
+
+    ul {
+        padding-top: 2vw;
+        width: 100%;
+    }
+
     header > ul {
-      flex-direction: column; /* Stack menu items vertically */
-      padding-top: 2vw; /* Adjust top padding */
+        padding-top: 2vw;
     }
-  
-    #MM {
-      left: auto; /* Remove absolute positioning */
-      margin: 0 auto; /* Center the MM image */
-      transform: none; /* Remove rotation */
+
+    a::after {
+        bottom: -6px; /* Adjust to control the distance below the text */
     }
-  
+
+    #MM,
+    #snap,
+    #insta,
+    #tiktok {
+        height: 4vw; /* Adjust the height for better visibility */
+    }
+
+    #footer {
+        height: auto;
+    }
+
     #intro {
-      top: 5em; /* Adjust top position */
+        top: 2em; /* Adjust the top position */
     }
-  
+
     #projects,
     #Hobbies {
-      height: auto; /* Remove fixed height */
+        height: auto;
     }
-  
+
     .container,
     .image {
-      width: 100%; /* Make the images take up the full width */
+        width: 100%;
     }
-  
+
     .overlay,
     .overlay2,
     .overlay3 {
-      width: 100%; /* Make overlays take up full width */
+        width: 100%;
     }
-  
+
     .rainbow-slide-text {
-      top: 16em; /* Adjust top position */
-      left: 2em; /* Adjust left position */
+        top: 16em; /* Adjust the top position */
+        left: 2em; /* Adjust the left position */
+        font-size: 2em; /* Adjust the font size */
     }
-  
+
     #Hobbies {
-      gap: 2em; /* Adjust gap between hobbies */
+        gap: 2em; /* Adjust the gap between hobbies */
     }
-  
+
     #football,
     #training {
-      width: 100%; /* Make hobby sections take up full width */
-      transform: none; /* Remove rotation */
+        width: 100%;
+        transform: none;
     }
-  
+
     #hobbyimg {
-      width: 70%; /* Make hobby images take up 70% of the width */
+        width: 70%;
     }
-  
-    #footer {
-      height: auto; /* Remove fixed height */
-    }
-  
-    #footer {
-      height: auto; /* Remove fixed height */
-    }
-  }
 
-  @media(orientation:portrait){
-    body{
-        width: 100vw;
-        min-height: 100vh;
-        margin: auto;
-        
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6fr 1fr);
-        gap: 10px;
-        grid-template-areas:
-        "nav"
-        "bac"
-        "rain"
-        "pro"
-        "ho"
-        "foot";
-        overflow: hidden;
+    #footer {
+        height: auto;
     }
-    
-
 }
 
 
-#nav{grid-area: nav;}
-.background{grid-area: bac;}
-.rainbow-slide-text{grid-area: rain;}
-#projects{grid-area: pro ;}
-#Hobbies{grid-area: ho;}
-#footer{grid-area: foot;}
