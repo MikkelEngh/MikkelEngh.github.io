@@ -361,20 +361,22 @@ a:hover::after {
 
   /* Your existing CSS rules outside the media query */
 
-@media only screen and (max-width: 600px) and (orientation: portrait) {
+@media(orientation: portrait) {
     body {
         height: auto;
         overflow-x: hidden;
+        
     }
 
     .background {
         width: 100%;
         margin: 0;
-        height: 40vh; /* Adjust the height as needed for better visibility */
+        height: 100vh; /* Adjust the height as needed for better visibility */
     }
 
     nav {
-        height: 8vw; /* Adjust the height for better visibility */
+        height: 12vw; /* Adjust the height for better visibility */
+        position: sticky;
     }
 
     nav > ul {
@@ -418,7 +420,7 @@ a:hover::after {
 
     .container,
     .image {
-        width: 100%;
+        width: 40%;
     }
 
     .overlay,
