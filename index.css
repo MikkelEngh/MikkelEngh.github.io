@@ -2,13 +2,11 @@
     transition: 0.5s;
 }
 body{
-    
    margin: 0%;
     background-color: rgb(39, 38, 38);
     height: 200vw;
     overflow-x: hidden;
     position: relative;
-    
 }
 
 
@@ -30,7 +28,7 @@ body{
 
 nav{
     position: sticky;
-    position: relative;
+   
     top: 0;
     left: 0;
     width: 100%;
@@ -48,7 +46,7 @@ nav{
 #title{
     position: absolute;
     top: 1em;
-    left: em;
+    left: 42em;
 }
 
 nav > ul{
@@ -326,7 +324,7 @@ a:hover::after {
     background-color: #1B263B;
     height: 75vh;
     width: 40vw;
-    transform: rotate(6deg);
+    transform: rotate(4deg);
     text-align: center;
 }
 
@@ -357,7 +355,64 @@ a:hover::after {
     
 }
 
+#infofresh, #infofootball{
+    color: white;
+    margin: 1em;
+    font-size: 1.2em;
+}
 
+#footer {
+   
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.footer-subtext {
+    font-size: 1em;
+    margin-bottom: 1.5em;
+}
+
+.powered-by {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.emoji {
+    margin-right: 0.5em;
+}
+
+.connect-text {
+    font-size: 1em;
+    margin: 0.5em 0;
+}
+
+.social-icons {
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
+.social-icon {
+    text-decoration: none;
+    margin-right: 1em;
+    color: inherit;
+}
+
+.copyrighttext {
+    font-size: 0.8em;
+    margin-top: 1.5em;
+}
 
   /* Your existing CSS rules outside the media query */
 
@@ -370,7 +425,7 @@ a:hover::after {
 
     .background {
         width: 100%;
-      
+        background: none;
         height: 70vh; /* Adjust the height as needed for better visibility */
     }
 
@@ -394,7 +449,7 @@ a:hover::after {
         padding-top: 2vw;
     }
 
-  
+
 
     #MM,
     #snap,
@@ -404,12 +459,14 @@ a:hover::after {
     }
 
     #footer {
-        height: 15vh;
+        height: 25vh;
+        font-size: 0.5em;
     }
 
     #intro {
         top: 4em; /* Adjust the top position */
         left: 1em;
+        font-size: 3em;
     }
 
     
@@ -426,20 +483,22 @@ a:hover::after {
     }
 
     .rainbow-slide-text {
-        top: 28em; /* Adjust the top position */
+        top: 21em; /* Adjust the top position */
         left: 3.5em; /* Adjust the left position */
         font-size: 2em; /* Adjust the font size */
     }
 
     #Hobbies {
         gap: 2em; /* Adjust the gap between hobbies */
-        height: 75vh;
+        height: 100vh;
     }
 
     #football,
     #training {
         width: 100%;
         transform: none;
+        font-size: 0.5em;
+
     }
 
     #hobbyimg {
