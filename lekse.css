@@ -169,3 +169,20 @@ p {
   border: 2px solid red;
   padding: 2px;
 }
+
+@media (orientation: portrait) {
+  #snap,
+  #tiktok,
+  #insta {
+    width: 4vw;
+    height: 2.6vh;
+  }
+
+  #MM {
+    display: none;
+  }
+  body {
+    overflow-x: scroll;
+    overflow-y: scroll;
+  }
+}

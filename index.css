@@ -19,6 +19,7 @@ nav {
   color: aliceblue;
   display: flex;
   align-items: center;
+  font-weight: bold;
 }
 #title {
   text-align: center;
@@ -123,7 +124,7 @@ a:hover::after {
 }
 
 #insta {
-  height: 2.2vw;
+  height: 2.2vw; /*Scaling the social media logos*/
 }
 #insta:hover {
   transform: scale(1.1);
@@ -153,10 +154,11 @@ a:hover::after {
 }
 
 #intro:hover {
-  color: aqua;
+  color: aqua; /*Changes the color of the title when hovering*/
 }
 
 #projects {
+  /* Main project div */
   height: 40vw;
   background-color: white;
   display: flex;
@@ -166,18 +168,21 @@ a:hover::after {
 }
 
 .container {
-  position: relative;
+  /* Individual project containers */
+  position: relative; /* Position relative for overlay styling */
   width: 50%;
 }
 
 .image {
-  display: block;
+  /* Images inside each container */
+  display: block; /* Ensures the image is displayed as a block element */
   width: 50%;
   height: 50%;
-  margin: 0 auto;
+  margin: 0 auto; /* Center the image horizontally */
 }
 
 .overlay {
+  /* Overlay for the first project */
   position: absolute;
   bottom: 0;
   left: 0;
@@ -185,11 +190,13 @@ a:hover::after {
   background-color: #1108ba;
   overflow: hidden;
   width: 50%;
-  height: 0;
-  transition: 0.5s ease;
-  margin: 0 auto;
+  height: 0; /* Initially hidden */
+  transition: 0.5s ease; /* Smooth transition effect */
+  margin: 0 auto; /* Center the overlay horizontally */
 }
+
 .overlay2 {
+  /* Overlay for the second project */
   position: absolute;
   bottom: 0;
   left: 0;
@@ -201,7 +208,9 @@ a:hover::after {
   transition: 0.5s ease;
   margin: 0 auto;
 }
+
 .overlay3 {
+  /* Overlay for the third project */
   position: absolute;
   bottom: 0;
   left: 0;
@@ -214,31 +223,29 @@ a:hover::after {
   margin: 0 auto;
 }
 
-.container:hover .overlay {
-  height: 100%;
-  opacity: 0.9;
-}
-
-.container:hover .overlay2 {
-  height: 100%;
-  opacity: 0.9;
-}
+.container:hover .overlay,
+.container:hover .overlay2,
 .container:hover .overlay3 {
+  /* Show the overlay on container hover */
   height: 100%;
   opacity: 0.9;
 }
 
 .text {
+  /* Text within the overlay */
   color: white;
   font-size: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Center the text verticly and horisonatlly */
   text-align: center;
 }
+
+/*custom scrollbar from https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp*/
 /* width */
 ::-webkit-scrollbar {
   width: 1em;
@@ -256,38 +263,6 @@ a:hover::after {
   border-radius: 10px;
 }
 
-@keyframes rainbowSlide {
-  0% {
-    background-position: 0% 0%;
-  }
-  100% {
-    background-position: 100% 0%;
-  }
-}
-
-.rainbow-slide-text {
-  font-weight: bold;
-  display: inline-block;
-  background: linear-gradient(
-    to right,
-    violet,
-    indigo,
-    blue,
-    green,
-    yellow,
-    orange,
-    red
-  );
-  background-size: 800% 100%;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  animation: rainbowSlide 4s linear infinite;
-  font-size: 3em;
-  text-align: center;
-  width: 100%;
-  margin-top: 2em;
-}
 #projectsBigCont {
   background-color: white;
 }
@@ -301,7 +276,43 @@ a:hover::after {
   border: solid red;
 }
 
+/* Define a keyframe animation called rainbowSlide that moves the backround, so that the colours change */
+@keyframes rainbowSlide {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+/* Styling for text with a rainbow sliding effect */
+.rainbow-slide-text {
+  font-weight: bold;
+  display: inline-block; /* Makes the text behave like a block element */
+  background: linear-gradient(
+    to right,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red
+  ); /* Creates a linear gradient background with rainbow colors */
+  background-size: 800% 100%;
+  color: transparent; /* Hides the text color so that the backround "fills" the empty text */
+  -webkit-background-clip: text; /* Applies background only to the text area in Webkit browsers */
+  background-clip: text; /* Applies background only to the text area */
+  animation: rainbowSlide 4s linear infinite; /* Applies the rainbowSlide animation with specified duration, timing function, and infinite loop */
+  font-size: 3em;
+  text-align: center;
+  width: 100%;
+  margin-top: 2em;
+}
+
 #Hobbies {
+  /*Background*/
   background: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.3) 0%,
@@ -354,7 +365,6 @@ a:hover::after {
   color: white;
   font-size: 2em;
   margin-top: 1.5em;
-  text-align: center;
 }
 
 #hobbyimg {
@@ -368,6 +378,7 @@ a:hover::after {
 }
 
 #h {
+  /*my hobbies text*/
   height: 20vh;
   color: white;
   position: absolute;
@@ -439,6 +450,7 @@ a:hover::after {
 }
 
 @media (orientation: portrait) {
+  /*Responsive design for phone. Background picture removed, font-size adjustments etc*/
   .background {
     background: none;
     height: 70vh;
@@ -460,5 +472,9 @@ a:hover::after {
   #insta {
     width: 4vw;
     height: 2.6vh;
+  }
+
+  #MM {
+    display: none;
   }
 }
