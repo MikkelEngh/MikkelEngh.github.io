@@ -1,102 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-</head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-<body>
+  <body>
+    <!-- nav-bar -->
     <nav id="nav">
-        <div id="title">Mikkel´sWorld</div>
-        <ul>
-            <img id="snap" src="snap.png" alt="">
-            <img id="insta" src="insta.png" alt="">
-            <img id="tiktok" src="tiktok.png" alt="">
-        </ul>
+      <div id="icons">
+        <img id="snap" src="snap.png" alt="snap" />
+        <img id="insta" src="insta.png" alt="insta" />
+        <img id="tiktok" src="tiktok.png" alt="tiktok" />
+      </div>
+      <div id="title">Mikkel´sWorld</div>
     </nav>
+    <!-- Cringe background picture -->
     <div class="background">
-        <header>
-            <ul>
-               
-                <img id="MM" src="MM.jpeg" alt="">
-                <a href="#" onclick="scrollToProjects();"><li>My Projects</li></a>
-                <a href="#" onclick="scrollToHobbies()"><li>Hobbies</li></a>
-                <a href="#" onclick="scrollToFooter();"><li>About</li></a>
-
-            </ul>
-
-        </header>
-        <div id="intro">Hi, I´m Mikkel Engh-Kristensen - a young and ambitious coder</div>
-       
+      <header>
+        <ul>
+          <img id="MM" src="MM.jpeg" alt="" />
+          <a href="#" onclick="scrollToProjects();"><li>My Projects</li></a>
+          <!--Activates the Java function when clicking (onclick) -->
+          <a href="#" onclick="scrollToHobbies()"><li>Hobbies</li></a>
+          <a href="#" onclick="scrollToFooter();"><li>About</li></a>
+        </ul>
+      </header>
+      <!-- introtext -->
+      <div id="intro">
+        Hi, I´m Mikkel Engh-Kristensen - a young and ambitious coder
+      </div>
     </div>
-    <div class="rainbow-slide-text">My Projects :)</div>
-    <div id="projects">
-      
+    <!-- Projects -->
+    <div id="projectsBigCont">
+      <div class="rainbow-slide-text">My Projects :)</div>
+      <div id="projects">
         <div class="container">
-            <a href="sorting.html">
-            <img id="border" src="fifacardport.jpeg" alt="Avatar" class="image">
+          <a href="sorting.html">
+            <img
+              id="border"
+              src="fifacardport.jpeg"
+              alt="Empty fifa card"
+              class="image"
+            />
             <div class="overlay">
-              <div class="text">Fifa Card Generator! Create your dream card!</div>
+              <div class="text">
+                Fifa Card Generator! Create your dream card!
+              </div>
             </div>
-            </a>
+          </a>
         </div>
+
         <div class="container">
-            <a href="lekse.html">
-            <img id="border2" src="P.E.K.K.A_info.webp" alt="Avatar" class="image">
+          <a href="lekse.html">
+            <img
+              id="border2"
+              src="P.E.K.K.A_info.webp"
+              alt="Pekka from clash royale"
+              class="image"
+            />
             <div class="overlay2">
               <div class="text">Clash Royale Battle! Defeat your enemy!</div>
             </div>
-            </a>
+          </a>
         </div>
+
         <div class="container">
-            <a href="innlevering.html">
-            <img id="border3" src="Manchester_United_FC_crest.svg.png" alt="Avatar" class="image">
+          <a href="innlevering.html">
+            <img
+              id="border3"
+              src="Manchester_United_FC_crest.svg.png"
+              alt="Man united Logo"
+              class="image"
+            />
             <div class="overlay3">
-              <div class="text">Manchester United, The Red Devils, my childhood club</div>
+              <div class="text">
+                Manchester United, The Red Devils, my childhood club
+              </div>
             </div>
-            </a>
+          </a>
         </div>
+      </div>
     </div>
+    <!-- Hobbies -->
     <div id="Hobbies">
-        <div id="h">My Hobbies</div>
-        <div id="football">
-            <div id="h1">Football</div>
-            <img id="hobbyimg" src="football.JPG" alt="">
-            <div id="infofootball">Life is full of stress and despair, but football has always been there to give me a timeout. The feeling of sliding the boots on, resetting the mind, and staring out on the field is magical. Football has also built my character and brought me joy and friends.</div>
+      <div id="h">My Hobbies</div>
+      <div id="football">
+        <div id="h1">Football</div>
+        <img
+          id="hobbyimg"
+          src="football.JPG"
+          alt="Me sitting on the footballfield"
+        />
+        <div id="infofootball">
+          Life is full of stress and despair, but football has always been there
+          to give me a timeout. The feeling of sliding the boots on, resetting
+          the mind, and staring out on the field is magical. Football has also
+          built my character and brought me joy and friends.
         </div>
-        <div id="training">
-            <div id="h1">Fresh Fitness</div>
-            <img id="hobbyimg" src="fresh.jpeg" alt="">
-            <div id="infofresh">When the injuries start stacking on top of each other from the footy, I always go to the gym for rehabilitation. There are Fresh Fitness gyms everywhere, and they are rarely crowded, making it a reliable second home. </div>
+      </div>
+      <div id="training">
+        <div id="h1">Fresh Fitness</div>
+        <img id="hobbyimg" src="fresh.jpeg" alt="Fresh Fitness" />
+        <div id="infofresh">
+          When the injuries start stacking on top of each other from the footy,
+          I always go to the gym for rehabilitation. There are Fresh Fitness
+          gyms everywhere, and they are rarely crowded, making it a reliable
+          second home.
         </div>
+      </div>
     </div>
-
+    <!-- Footer -->
     <footer id="footer">
-        <p class="footer-text">Empowering Joy in Coding</p>
-        <p class="footer-subtext">Innovation, Precision, and Passion</p>
+      <p class="footer-text">Empowering Joy in Coding</p>
+      <p class="footer-subtext">Innovation, Precision, and Passion</p>
 
-        <div class="powered-by">
-            <span class="emoji">🚀</span>
-            <span class="bold-text">Powered by Commitment</span>
-            <span class="emoji">🌟</span>
-        </div>
+      <div class="powered-by">
+        <span class="emoji">🚀</span>
+        <span class="bold-text">Powered by Commitment</span>
+        <span class="emoji">🌟</span>
+      </div>
 
-        <p class="connect-text">Connect with Mikkel:</p>
+      <p class="connect-text">Connect with Mikkel:</p>
 
-        <div class="social-icons">
-            <a href="#" class="social-icon" style="color: #4CAF50;">📘</a>
-            <a href="#" class="social-icon" style="color: #3b5998;">📘</a>
-            <a href="#" class="social-icon" style="color: #55acee;">🐦</a>
-            <a href="#" class="social-icon" style="color: #dd4b39;">📷</a>
-            <a href="#" class="social-icon" style="color: #cd201f;">📹</a>
-        </div>
+      <div class="social-icons">
+        <a href="#" class="social-icon">😎</a>
+        <a href="#" class="social-icon">🦾</a>
+        <a href="#" class="social-icon">🧠</a>
+        <a href="#" class="social-icon">⚽️</a>
+        <a href="#" class="social-icon">🇳🇴</a>
+      </div>
 
-        <p class="copyright-text">© 2024 Mikkel's World. All Rights Reserved. Terms & Conditions Apply.</p>
+      <p class="copyrighttext">
+        © 2024 Mikkel's World. All Rights Reserved. Terms & Conditions Apply.
+      </p>
     </footer>
-    
-    
-</body>
-<script src="index.js"></script>
+  </body>
+  <script src="index.js"></script>
 </html>

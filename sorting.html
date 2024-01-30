@@ -1,76 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sort</title>
-    <link rel="stylesheet" href="sorting.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="sorting.css" />
+  </head>
+  <body>
+    <nav id="nav">
+      <div id="icons">
+        <img id="snap" src="snap.png" alt="snap" />
+        <img id="insta" src="insta.png" alt="insta" />
+        <img id="tiktok" src="tiktok.png" alt="tiktok" />
+      </div>
+      <div id="title">Mikkel´sWorld</div>
+    </nav>
     <div class="wrapper">
-        <div id="header">FIFA CARD GENERATOR</div>
+      <div id="header">FIFA CARD GENERATOR</div>
 
-        <div id="inputs">
-            <label for="name">Name:</label>
-            <input type="text" id="name" placeholder="Ronaldo">
-            
-            <label for="date">Date:</label>
-            <input type="date" id="date" placeholder="2022-12-1">
+      <div id="inputs">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Ronaldo" />
 
-            <label for="category">Category:</label>
-            <select id="category">
-                <option value="Ke">Keeper</option>
-                <option value="Df">Defender</option>
-                <option value="Cm">Centermidfielder</option>
-                <option value="At">Attacker</option>
-            </select>
+        <label for="date">Date:</label>
+        <input type="date" id="date" placeholder="2022-12-1" />
 
-            <label for="pace">Pace:</label>
-            <input type="number" id="pace" placeholder="90" min="1" max="99">
+        <label for="category">Category:</label>
+        <select id="category">
+          <option value="Ke">Keeper</option>
+          <option value="Df">Defender</option>
+          <option value="Cm">Centermidfielder</option>
+          <option value="At">Attacker</option>
+        </select>
 
-            <label for="shooting">Shooting:</label>
-            <input type="number" id="shooting" placeholder="99" min="1" max="99">
+        <label for="pace">Pace:</label>
+        <input type="number" id="pace" placeholder="90" min="1" max="99" />
 
-            <label for="passing">Passing:</label>
-            <input type="number" id="passing" placeholder="80" min="1" max="99">
+        <label for="shooting">Shooting:</label>
+        <input type="number" id="shooting" placeholder="99" min="1" max="99" />
 
-            <label for="dribbling">Dribbling:</label>
-            <input type="number" id="dribbling" placeholder="99" min="1" max="99">
+        <label for="passing">Passing:</label>
+        <input type="number" id="passing" placeholder="80" min="1" max="99" />
 
-            <label for="defense">Defense:</label> 
-            <input type="number" id="defense" placeholder="45" min="1" max="99">
+        <label for="dribbling">Dribbling:</label>
+        <input type="number" id="dribbling" placeholder="99" min="1" max="99" />
 
-            <label for="physicality">Physicality:</label>
-            <input type="number" id="physicality" placeholder="88" min="1" max="99">
+        <label for="defense">Defense:</label>
+        <input type="number" id="defense" placeholder="45" min="1" max="99" />
 
-            <button id="add">Add</button>
-        </div>
+        <label for="physicality">Physicality:</label>
+        <input
+          type="number"
+          id="physicality"
+          placeholder="88"
+          min="1"
+          max="99"
+        />
 
-        <div id="sorting">
-            
-            <div id="siu">Sort by:</div>
-            <button id="sortName">Name</button>
-            <button id="sortDate">Date</button>
-            <button id="sortCategory">Category</button>
-            <button id="sortPace">Pace</button>
-            <button id="sortShooting">Shooting</button>
-            <button id="sortPassing">Passing</button>
-            <button id="sortDribbling">Dribbling</button>
-            <button id="sortDefense">Defense</button>
-            <button id="sortPhysicality">Physicality</button>       
-        </div>
-        
+        <button id="add">Add</button>
+      </div>
 
-        <div id="container">
-            
-        </div>
+      <div id="sorting">
+        <div id="siu">Sort by:</div>
+        <button id="sortName">Name</button>
+        <button id="sortDate">Date</button>
+        <button id="sortCategory">Category</button>
+        <button id="sortPace">Pace</button>
+        <button id="sortShooting">Shooting</button>
+        <button id="sortPassing">Passing</button>
+        <button id="sortDribbling">Dribbling</button>
+        <button id="sortDefense">Defense</button>
+        <button id="sortPhysicality">Physicality</button>
+      </div>
 
-        
-
+      <div id="container"></div>
     </div>
-</body>
-<script src="sorting.js"></script>
-</html>
+    <footer id="footer">
+      <p class="footer-text">Empowering Joy in Coding</p>
+      <p class="footer-subtext">Innovation, Precision, and Passion</p>
 
+      <div class="powered-by">
+        <span class="emoji">🚀</span>
+        <span class="bold-text">Powered by Commitment</span>
+        <span class="emoji">🌟</span>
+      </div>
+
+      <p class="connect-text">Connect with Mikkel:</p>
+
+      <div class="social-icons">
+        <a href="#" class="social-icon">😎</a>
+        <a href="#" class="social-icon">🦾</a>
+        <a href="#" class="social-icon">🧠</a>
+        <a href="#" class="social-icon">⚽️</a>
+        <a href="#" class="social-icon">🇳🇴</a>
+      </div>
+
+      <p class="copyrighttext">
+        © 2024 Mikkel's World. All Rights Reserved. Terms & Conditions Apply.
+      </p>
+    </footer>
+    <a id="back" href="index.html">Return to main</a>
+  </body>
+  <script src="sorting.js"></script>
+</html>
