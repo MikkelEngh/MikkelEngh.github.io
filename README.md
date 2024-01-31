@@ -52,6 +52,77 @@ fifa cards:
 https://www.ebay.co.uk/itm/154317573297
 https://sk.pinterest.com/pin/517914025905868119/
 
+football field:
+https://en.reformsports.com/why-do-they-sprinkle-football-pitches/
+
+France:
+https://www.britannica.com/place/France
+
+Fresh Fitness
+https://www.freshfitness.no/treningssenter/treningssenter-lindeberg
+
+United Homekit
+https://www.fruugonorge.com/manchester-united-boys-shirt-home-kit-202324-offisiell-fotballgave/p-199496219-424791304
+
+Høijlund:
+https://www.tv2.no/sport/fotball/aerlig-hojlund-om-united-litt-rotete/16131585/
+
+insta logos:
+https://commons.wikimedia.org/wiki/File:Instagram_logo_2016.svg
+https://no.pinterest.com/pin/grey-instagram-icon--382383824616679955/
+
+Artificial grass: 
+https://www.dreamstime.com/top-view-artificial-grass-green-texture-background-image112030925
+
+Man united Crest:
+https://en.wikipedia.org/wiki/Manchester_United_F.C.
+
+Empty Clash of Clans map: 
+https://clashofclans.fandom.com/wiki/Scenery
+
+Martinez:
+https://www.indiatoday.in/sports/football/story/premier-league-manchester-united-lisandro-martinez-injury-erik-ten-hag-2360567-2023-04-15
+
+M logo: 
+https://pngimg.com/image/81989
+
+Old Trafford:
+https://www.sportspromedia.com/news/manchester-united-old-trafford-stadium-redevelopment-takeover-sale/?zephr_sso_ott=VwMlvu
+
+Onana:
+https://www.goal.com/en/news/man-utd-goalkeeper-andre-onana-out-of-international-retirement-join-cameroon-squad/blt63bc28b123be7d4c
+
+Pekka:
+https://clashofclans.fandom.com/wiki/P.E.K.K.A
+
+Portugal:
+https://en.wikipedia.org/wiki/Portugal
+
+Rashford:
+https://www.gettyimages.no/photos/marcus-rashford
+
+Shaw:
+https://www.irishmirror.ie/sport/soccer/luke-shaw-man-utd-contract-29597996
+
+Snap logos:
+https://1000logos.net/snapchat-logo/
+https://no.pinterest.com/pin/grey-snapchat-icon--403353710381719179/
+
+Tiktok logos:
+https://www.tiktok.com/explore
+https://www.iconsdb.com/gray-icons/tiktok-2-icon.html
+
+United third Kit:
+https://www.unisportstore.no/fotballdrakter/manchester-united-tredjedrakt-202324/307892/?dfw=10188&feed=21925&utm_source=google&utm_medium=organic&utm_campaign=surfaces%20no&utm_content=organic%20google%20shopping&utm_source=google&utm_medium=cpc&utm_campaign=no%20//%20shopping%20//%20models%20//%20roas&utm_id=738444211&gad_source=1&gclid=Cj0KCQiA2eKtBhDcARIsAEGTG41VXZrm7eWvdEukKZtiNuMpm1PW6zxN_OcME6geLIMV9AzwIiOXKSkaAiSnEALw_wcB
+
+Varane:
+https://www.reuters.com/sports/soccer/man-utds-varane-says-players-ignored-by-football-authorities-over-added-time-2023-08-07/
+
+Wan-Bissaka:
+https://www.theguardian.com/football/2023/sep/18/manchester-united-confirm-aaron-wan-bissaka-will-be-out-for-several-weeks
+
+
+
 
 
 
